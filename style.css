@@ -34,18 +34,31 @@ body{
     left:14rem;
     width: calc(100% - 16rem);
     padding:1rem;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,36,47,0.16708681763721112) 100%, rgba(0,212,255,1) 100%);     align-items: center;
+    background: rgb(39,39,42);
+    background: linear-gradient(0deg, rgba(39,39,42,1) 22%, rgba(145,22,242,0) 100%, rgba(0,212,255,1) 100%); 
 }
 #window main form{
     width:100%;
     display:flex;
 }
 #window main .prompt textarea{
-    height: 56px;
+    height: 2.5rem;
     max-height:200px;
     overflow-y: hidden;
     width: 100%;
+    background-color: #40414f6a;
+    border-radius: 0.5rem;
+    border:1px solid azure;
+    color:azure;
+    font-size:0.9rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+    padding-left: 0.9rem;
+    resize: none;
+
+}
+#window main .prompt textarea:focus-visible{
+    outline: none;
 }
 #window .messages{
     margin:2rem;
