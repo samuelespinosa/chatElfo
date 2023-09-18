@@ -26,6 +26,7 @@ body{
     flex-direction: column;
     order:1;
     overflow-y: scroll;
+    min-width: 300px;
 }
 #window main .prompt{
     display: flex;
@@ -40,12 +41,14 @@ body{
 #window main form{
     width:100%;
     display:flex;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
 }
 #window main .prompt textarea{
     height: 2.5rem;
     max-height:200px;
     overflow-y: hidden;
-    width: 100%;
     background-color: #40414f6a;
     border-radius: 0.5rem;
     border:1px solid azure;
@@ -55,10 +58,22 @@ body{
     line-height: 2rem;
     padding-left: 0.9rem;
     resize: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    flex-basis: 95%;
 
 }
 #window main .prompt textarea:focus-visible{
     outline: none;
+}
+#window main .prompt #send_btn{
+    max-height: 1.8rem;
+    background-color: transparent;
+    border:none;
+    margin-left: 0.5rem;
+}
+#window main .prompt #send_btn img{
+    max-height: 1.8rem;
 }
 #window .messages{
     margin:2rem;
