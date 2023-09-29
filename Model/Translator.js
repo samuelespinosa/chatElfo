@@ -9,10 +9,9 @@ class Translator {
     static remove_translation(espanol,elfo){
 
     }
-    capitalize(word) {
-      }
       
     findWord(word){
+        if (word===""){return "Por favor ingrese una palabra";}
         word= word[0].toUpperCase() + word.slice(1).toLowerCase();
         if(this.dict[word]!==undefined){
             return Object.values(this.dict[word]).join("");

@@ -32,5 +32,5 @@ btn.addEventListener("click",(e)=>{
     input.value=""; 
 });
 function pageScroll() {
-    document.querySelector("main").scrollTo({ top: document.querySelector("main").scrollHeight, behavior: 'smooth' });
+    document.querySelector(".messages").scrollTo({ top: document.querySelector(".messages").scrollHeight, behavior: 'smooth' });
 }
