@@ -27,6 +27,7 @@ body{
     order:1;
     overflow-y: scroll;
     min-width: 300px;
+    width: 100%;
 }
 #window main .prompt{
     display: flex;
@@ -76,9 +77,11 @@ body{
     max-height: 1.8rem;
 }
 #window .messages{
-    margin:2rem;
+    margin-bottom: 3.5rem;
+    padding:2rem;
+    overflow: scroll;
 }
-#window .messages .question >div{
+#window .messages .chat >div{
     margin:0.5rem;
 }
 #window aside{
@@ -94,6 +97,10 @@ body{
     width: 100%;
     justify-content: center;
     color:azure;
+}
+#window aside #user_menu:hover{
+    background-color:#161a42;
+    border-radius: 0.5rem;
 }
 #window aside #user_menu>div{
     margin:0.2rem;
