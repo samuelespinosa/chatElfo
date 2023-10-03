@@ -4,6 +4,11 @@ body{
     border-color: transparent; 
     color:#fff;
 }
+.cont_form{position: relative; width:calc(100% - 45px); }
+.cont_form button{width: 45px;}
+.cont_form textarea{width: 100%; padding-right: 80px;}
+.cont_form select{position: absolute; top:0; right: 0; height: 100%; width: 80px;}
+
 .f-container{
     display: flex;
 }
@@ -39,6 +44,9 @@ body{
     background: rgb(39,39,42);
     background: linear-gradient(0deg, rgba(39,39,42,1) 22%, rgba(145,22,242,0) 100%, rgba(0,212,255,1) 100%); 
 }
+#window main .prompt select{
+    background-color: transparent;
+}
 #window main form{
     width:100%;
     display:flex;
@@ -60,7 +68,6 @@ body{
     padding-left: 0.9rem;
     resize: none;
     white-space: nowrap;
-    overflow-x: scroll;
     flex-basis: 95%;
 
 }
@@ -79,7 +86,8 @@ body{
 #window .messages{
     margin-bottom: 3.5rem;
     padding:2rem;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-wrap: anywhere;
 }
 #window .messages .chat >div{
     margin:0.5rem;

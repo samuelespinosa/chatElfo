@@ -31,8 +31,16 @@
                     </div>
                 </div>-->
             <div class="prompt">
-                <form>
-                    <textarea rows="1" id="to_translate" placeholder="Traduce algo..." required></textarea>
+                <form >
+                    <div class="cont_form">
+                        <textarea rows="1" id="to_translate" placeholder="Traduce algo..." required></textarea>
+                    <select name="select">
+                        <option value="0">Traducir</option>
+                        <option value="1" selected>Añadir</option>
+                        <option value="2">Eliminar</option>
+                    </select>
+                </div>
+                    
                     <button id="send_btn">
                         <img src="./assets/send.ico">
                     </button>
@@ -47,8 +55,8 @@
                 </div>
                 <div id="user_name">Some user</div>
             </div>
-        </aside>
-   </div> 
-</body>
+        </aside> 
+    </div>
+</body> 
 </html>
 <script  type="module" src="index.js"></script>
