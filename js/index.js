@@ -1,6 +1,6 @@
 import { Translator } from "../Model/Translator.js";
 import { Helper } from "../Model/Helper.js";
-fetch('http://localhost:8080/assets/diccionario.json')
+fetch('../assets/diccionario.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('La red esta malaaa');
