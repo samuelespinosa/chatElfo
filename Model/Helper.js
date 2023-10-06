@@ -10,7 +10,7 @@ class Helper{
         this.translator.translate(word);
         Helper.pageScroll();input.value="";
         }catch(e){
-            
+            console.log(e);
             this.translator.add_to_chat("No se pudo traducir la palabra","answer");
         }
     }
@@ -24,6 +24,7 @@ class Helper{
             Helper.pageScroll();input.value="";
         }
         }catch(e){
+            console.log(e);
             this.translator.add_to_chat("No se pudo traducir la palabra","answer");
         }
     }

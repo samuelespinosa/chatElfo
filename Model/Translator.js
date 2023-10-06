@@ -1,10 +1,9 @@
 class Translator {
     dict;
     user_dict;
-    constructor(dict,user_dict){
-        this.dict=dict;
-        this.user_dict=user_dict;
-    }
+    
+    set_dict(dict){this.dict=dict;}
+    set_user_dict(dict){this.user_dict=dict;}
     add_traslation(palabra,elfo){
         palabra= palabra[0].toUpperCase() + palabra.slice(1).toLowerCase();
         if(this.user_dict[palabra+'.']===undefined){
