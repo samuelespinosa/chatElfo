@@ -43,7 +43,7 @@ const showRegistrationButton = document.getElementById('showRegistration');
 
         if (newPassword !== confirmPassword) {
             alert('Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
-            return window.open("../regristro.html", "_blank");; 
+            return window.location.href = "../regristro.html";
         }
 
         // Aquí código para guardar el nuevo usuario y contraseña en una base de datos 
@@ -52,5 +52,5 @@ const showRegistrationButton = document.getElementById('showRegistration');
   
         alert('Registro exitoso. Ahora puedes iniciar sesión.');
         registrationForm.style.display = 'none';
-        window.open("../login.html", "_blank");
+        window.location.href = "../login.html";
     });

@@ -45,7 +45,10 @@ body{
     background: linear-gradient(0deg, rgb(0, 0, 0) 22%, rgb(22, 65, 6) 100%, rgb(59, 40, 4) 100%); 
 }
 #window main .prompt select{
-    background-color: transparent;
+    border: none;
+    margin-right: 0.4rem;
+    background-color:transparent;
+    color: rgb(162, 184, 154);
 }
 #window main form{
     width:100%;
@@ -107,10 +110,21 @@ body{
     color:azure;
 }
 #window aside #user_menu:hover{
-    background-color:#161a42;
+    background-color:#ffffff;
     border-radius: 0.5rem;
 }
 #window aside #user_menu>div{
     margin:0.2rem;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    #window main .prompt{
+        display: flex;
+        position: absolute;
+        width: calc(100% - 2rem);
+        left:0;
+    }
+}

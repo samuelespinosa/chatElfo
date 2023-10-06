@@ -16,7 +16,7 @@ function validarInicioSesion(username, password) {
           // Si se encontró el usuario, verificar la contraseña
           if (usuario.password === password) {
             console.log('Inicio de sesión exitoso');
-            window.open("../index.html", "_blank");
+            window.location.href = "../index.html";
           } else {
             alert('Contraseña incorrecta.');
             
