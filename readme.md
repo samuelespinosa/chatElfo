@@ -31,11 +31,11 @@ Usa el siguiente comando para crear un entorno virtual
     pip install -r requirements.txt
 </pre>
 
-## Paso 6: Navegar al Directorio Src del proyecto con el navegador de archivos
+## Paso 6: Tener mysql
 
 Asegurate de tener mysql instalado y tener el proceso corriendo.
 
-## Paso 7: Navegar al Directorio src proyecto pon el navegador de archivos
+## Paso 7: Navegar al directorio src del proyecto y modificar .env
 
 Abre el archivo .env y modifica las variables de entorno, solo debes modificar la contrasña si tienes las configuraciones por defecto de mysql
 
