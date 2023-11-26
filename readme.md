@@ -1,4 +1,4 @@
-# Configuración del Entorno Virtual en Windows
+# Configuraciones necesarias para ejecutar el proyecto en windows 
 
 A continuación se detallan los pasos para crear un entorno virtual y instalar los requisitos del proyecto en Windows.
 
@@ -11,7 +11,7 @@ Abre el Símbolo del Sistema en tu máquina con Windows (CMD).
 Usa el comando cd para navegar al directorio donde está el proyecto:
 
 <pre>
-    cd  Eldilex
+    cd  EldiLex
 </pre>
 
 ## Paso 3: Crear y Activar el Entorno Virtual
