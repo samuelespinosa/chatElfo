@@ -11,33 +11,24 @@ Abre el Símbolo del Sistema en tu máquina con Windows (CMD).
 Usa el comando cd para navegar al directorio donde está el proyecto:
 
 <pre>
-
-```bash
     cd  Eldilex
-```
 </pre>
 
-##Paso 3: Crear y Activar el Entorno Virtual
+## Paso 3: Crear y Activar el Entorno Virtual
 
 Usa el siguiente comando para crear un entorno virtual
 <pre>
-```bash
     python -m venv venv
-```
 </pre>
 
 ### Ahora, activa el entorno virtual con el siguiente comando:
 <pre>
-```bash
     venv\Scripts\activate
-```
 </pre>
 
-##Paso 4: Instalar Requisitos
+## Paso 4: Instalar Requisitos
 <pre>
-```bash
     pip install -r requirements.txt
-```
 </pre>
 
 ## Paso 6: Navegar al Directorio Src del proyecto con el navegador de archivos
@@ -50,16 +41,12 @@ Abre el archivo .env y modifica las variables de entorno, solo debes modificar l
 
 ## Paso 8: Navegar al Directorio src del proyecto con cmd 
 <pre>
-```bash
     cd src
-```
 </pre>
 
 ## Paso 9: Ejecuta el proyecto
 <pre>
-```bash
     python app.py
-```
 </pre>
 
 ## Paso 10: Click ala dirección mostrada en consola.
