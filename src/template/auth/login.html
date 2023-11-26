@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat elfo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylelogin.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v5-font-face.min.css" integrity="sha512-5zrDFDfoCqAqA6xPCDWHHy8cOXlRGgCy+/wh4eUwzJXAwyvBeBzCJ4AqVlasi+Dxr5b9qabJw67ocz+qsax4eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form id="loginForm">
+        <h1 class="title">Login</h1>
+        <label>
+            <i class="fa-solid fa-user"></i>Usuario
+            <input type="text" placeholder="Ingrese usuario" id="usuario">
+        </label>
+        
+        <label>
+            <i class="fa-solid fa-user"></i>Contraseña
+            <input type="password" placeholder="Ingrese contraseña" id="contrasena">
+        </label>
+
+        <label>
+            <button type="submit">Login</button>
+</form>    
+            <button id="showRegistration" value="registrarce"><a class="btn btn-success btnterapia" href="http://127.0.0.1:5000/registro.html">Regístrate</a></button>
+        </label>
+
+
+    <script type="module" src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    background:linear-gradient(to right, rgba(9, 97, 18, 0.7),#000000);
+    border-color: transparent; 
+    color:#fff;
+}
+
+.cont_form{position: relative; width:calc(100% - 45px); }
+.cont_form button{width: 45px;}
+.cont_form textarea{width: 100%; padding-right: 80px;}
+.cont_form select{position: absolute; top:0; right: 0; height: 100%; width: 80px;}
+
+.f-container{
+    display: flex;
+}
+#window{
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#window header {
+    display: flex;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    max-height: 4.5rem;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, rgba(9, 97, 18, 0.7),#000000);
+}
+#window header h2 {
+    color: rgb(255, 255, 255);
+    margin-right: auto; /* Esto empujará el título hacia la izquierda */
+}
+#window main{ 
+    flex-direction: column;
+    order:1;
+    overflow-y: scroll;
+    min-width: 300px;
+    width: 100%;
+}
+#window main .prompt{
+    display: flex;
+    position:absolute;
+    bottom:0;
+    left:14rem;
+    width: calc(100% - 16rem);
+    padding:1rem;
+    background: rgb(39,39,42);
+    background: linear-gradient(to right, rgba(4, 31, 6, 0.7), rgba(9, 97, 18, 0.7)); 
+}
+#window main .prompt select{
+    border: none;
+    margin-right: 0.4rem;
+    background-color:transparent;
+    color: rgb(98, 112, 93);
+}
+#window main form{
+    width:100%;
+    display:flex;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+#window main .prompt textarea{
+    height: 2.5rem;
+    max-height:200px;
+    overflow-y: hidden;
+    background-color: #40414f6a;
+    border-radius: 0.5rem;
+    border:1px solid azure;
+    color:azure;
+    font-size:0.9rem;
+    box-sizing: border-box;
+    line-height: 2rem;
+    padding-left: 0.9rem;
+    resize: none;
+    white-space: nowrap;
+    flex-basis: 95%;
+
+}
+#window main .prompt textarea:focus-visible{
+    outline: none;
+}
+#window main .prompt #send_btn{
+    max-height: 1.8rem;
+    background-color: transparent;
+    border:none;
+    margin-left: 0.5rem;
+}
+#window main .prompt #send_btn img{
+    max-height: 1.8rem;
+}
+
+#window .messages {
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-wrap: anywhere;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-position: right; /* Coloca la imagen a la derecha */
+    background-size: auto 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+}
+
+#window .messages .chat >div{
+    margin:0.5rem;
+}
+#window aside{
+    order:0;
+    min-width:14rem;
+    background: linear-gradient(to right, rgba(9, 97, 18, 0.7),#000000);
+}
+#window aside #user_menu{
+    display: flex;
+    max-height: 4.5rem;
+    margin:0.5rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    color:azure;
+}
+#window aside #user_menu:hover{
+    background-color:#ffffff;
+    border-radius: 0.5rem;
+}
+
+#window aside #user_menu>div{
+    margin:0.2rem;
+}
+
+/*@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    #window main .prompt{
+        display: flex;
+        position: absolute;
+        width: calc(100% - 2rem);
+        left:0;
+    }
+}*/
+
+/* En tu archivo CSS */
+.right-align {
+    margin-left: auto;
+}
+#funtion_p{
+position: absolute;
+  
+  left: 0;
+  bottom: 0;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+ 
+    flex-wrap: wrap;
+    max-width: 20%;
+}
+
+ .options-container button {
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    min-width: 150px; /* Ajusta el ancho según sea necesario */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(33, 99, 11);
+    color: rgb(255, 255, 255); /* Cambia el color del texto al pasar el ratón */
+}
+
+#window main .prompt .options-container button:hover {
+    background-color: #4CAF50; /* Cambia el color de fondo al pasar el ratón */
+    color: rgb(255, 255, 255); /* Cambia el color del texto al pasar el ratón */
+}

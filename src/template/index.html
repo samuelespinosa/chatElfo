@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat elfo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="module" src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+</head>
+<body>
+   <div class="f-container" id="window">
+        <main class="f-container">
+            <header class="f-container header">
+                <h2>Chat elfo EldiLex</h2>
+                
+                <div class="right-align">
+                    {% if 'usuario_id' in session %}
+                        <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+                    {% endif %}
+                </div>
+            </header>    
+
+            <div class="messages">
+                <div class="f-container chat">
+                    <div class="img_chatter">
+                        <img src="{{ url_for('static', filename='img/machine.png') }}">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Bienvenido a el chat elfo. Escribe una palabra en español y te dará su significado en élfico.
+                        </p>
+                        <p>Debe seleccionar qué acción desea hacer antes de enviar un mensaje</p> 
+                    </div>
+                </div>
+                
+                <div class="prompt">
+                    <form>
+                        <div class="cont_form">
+                            <textarea rows="1" id="to_translate" placeholder="Ingresa tu palabra..."></textarea>
+                            
+                            
+                        </div>
+                    </form>
+                </div>
+                <div>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="f-container sidebar">
+            <div class="f-container" id="user_menu">
+                <div id="img_user">
+                    <img src="{{ url_for('static', filename='img/user.png') }}">
+                </div>
+                <div id="user_name">
+                    {% if 'usuario_id' in session %}
+                        {{ session['nombre_de_usuario'] }}
+                    {% else %}
+                        Some user
+                    {% endif %}
+                </div>
+                
+            </div>
+            <div id="funtion_p">
+                <div class="options-container">
+                    <button type="button" class="action-btn" id="btn6" >Limpiar</button>
+                    <button type="button" class="action-btn" id="btn0" >Traducir ESP->ELF</button>
+                    <button type="button" class="action-btn" id="btn1" >Traducir ELF->ESP</button>
+                    <button type="button" class="action-btn" id="btn2" >Añadir ESP->ELF</button>
+                    <button type="button" class="action-btn" id="btn3" >Añadir ELF->ESP</button>
+                    <button type="button" class="action-btn" id="btn4" >Eliminar ESP->ELF</button>
+                    <button type="button" class="action-btn" id="btn5" >Eliminar ELF->ESP</button>
+                </div>
+            </div>
+        </aside> 
+    </div>
+</body> 
+</html>
+
+
+<script>
+
+</script>
