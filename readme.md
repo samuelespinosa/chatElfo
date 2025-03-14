@@ -3,7 +3,7 @@
     docker-compose up --build
 </pre>
 
-And visualize the projecto on localhost:5000
+And visualize the project on localhost:5000
 
 
 
